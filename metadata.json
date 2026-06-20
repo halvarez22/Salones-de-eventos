@@ -1,0 +1,6 @@
+{
+  "name": "Co-piloto y Landing Page de Salones de Eventos",
+  "description": "Una plataforma interactiva que actúa como socio de pensamiento estratégico para planificar la landing page de tus salones de eventos y visualizar una vista previa premium en tiempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
