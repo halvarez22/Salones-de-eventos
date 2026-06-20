@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Glassmorphism custom components with fine white border glow & rich back shadow */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.glass-card-interactive {
+  background-color: rgba(255, 255, 255, 0.035) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.glass-card-interactive:hover {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* -------------------------------------------------------------
+   LIGHT GLASS MORPHISM THEME SYSTEM OVERRIDES
+   ------------------------------------------------------------- */
+
+.theme-light {
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
+}
+
+/* Specific main elements overrides in light theme */
+.theme-light #landing-live-preview {
+  background-color: #f8fafc !important;
+  color: #1e293b !important;
+}
+
+.theme-light header {
+  background-color: rgba(255, 255, 255, 0.45) !important;
+  border-color: rgba(148, 163, 184, 0.12) !important;
+}
+
+.theme-light h1,
+.theme-light h2,
+.theme-light h3,
+.theme-light h4,
+.theme-light h5,
+.theme-light h6,
+.theme-light .text-white {
+  color: #0f172a !important;
+}
+
+.theme-light p,
+.theme-light .text-slate-200,
+.theme-light .text-slate-300,
+.theme-light .text-slate-400,
+.theme-light .text-slate-350 {
+  color: #475569 !important;
+}
+
+.theme-light select,
+.theme-light input,
+.theme-light textarea {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  color: #0f172a !important;
+  border-color: rgba(148, 163, 184, 0.2) !important;
+}
+
+.theme-light select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Class-specific backgrounds conversion to soft translucency */
+.theme-light .bg-slate-900,
+.theme-light .bg-slate-950,
+.theme-light .bg-slate-850,
+.theme-light .bg-white\/5 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-color: rgba(148, 163, 184, 0.12) !important;
+}
+
+.theme-light .bg-gradient-to-r.from-indigo-950\/40.to-emerald-950\/40 {
+  background-image: linear-gradient(to right, rgba(99, 102, 241, 0.06), rgba(16, 185, 129, 0.06)) !important;
+  border-color: rgba(148, 163, 184, 0.12) !important;
+}
+
+/* Colors enhancement for readable contrast in light mode */
+.theme-light .text-indigo-50 {
+  color: #1e1b4b !important;
+}
+
+.theme-light .text-indigo-350,
+.theme-light .text-indigo-300 {
+  color: #4338ca !important;
+}
+
+.theme-light .text-cyan-305,
+.theme-light .text-cyan-300 {
+  color: #0369a1 !important;
+}
+
+.theme-light .text-emerald-300,
+.theme-light .text-emerald-400 {
+  color: #047857 !important;
+}
+
+.theme-light .border-white\/10,
+.theme-light .border-white\/5 {
+  border-color: rgba(148, 163, 184, 0.15) !important;
+}
+
+/* Translucent Light Glass styles */
+.theme-light .glass-card {
+  background-color: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 6px 18px rgba(15, 23, 42, 0.05) !important;
+}
+
+.theme-light .glass-card-interactive {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 8px 24px rgba(15, 23, 42, 0.06) !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.theme-light .glass-card-interactive:hover {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 12px 28px rgba(99, 102, 241, 0.08) !important;
+}
+
+/* Custom scrollbar style for high fidelity workspace view */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+
